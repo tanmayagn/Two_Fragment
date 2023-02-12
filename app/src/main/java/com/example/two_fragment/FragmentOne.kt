@@ -23,9 +23,11 @@ class FragmentOne : Fragment(R.layout.one_fragment) {
         submit = view.findViewById(R.id.button)
 
         submit.setOnClickListener(View.OnClickListener {
-            mainActivity?.mainViewModel?.liveUserDetails?.value = UserDetails(etName.text.toString()
+            var userDetail1 = UserDetails(etName.text.toString()
                 ,etLastName.text.toString()
                 ,etGender.text.toString())
+
+            mainActivity?.mainViewModel?.liveUserDetails?.value = userDetail1
         })
     }
 

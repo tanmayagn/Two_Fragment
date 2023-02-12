@@ -3,30 +3,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="bottom"
+    android:background="@color/white"
     >
     <EditText
         android:id="@+id/etName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         android:hint="Name" />
 
     <EditText
         android:id="@+id/etLastName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
         android:layout_below="@+id/etName"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         android:hint="Last Name" />
 
     <EditText
         android:id="@+id/etGender"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
         android:layout_below="@+id/etLastName"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         android:hint="Gender" />
+
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"

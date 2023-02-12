@@ -7,6 +7,8 @@
         android:id="@+id/tvTextPersonName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         android:hint="First name"/>
 
     <TextView
@@ -14,6 +16,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Last name"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         android:layout_below="@+id/tvTextPersonName" />
 
     <TextView
@@ -21,8 +25,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="gender"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         android:layout_below="@+id/tvLastName" />
-
-
 
 </RelativeLayout>

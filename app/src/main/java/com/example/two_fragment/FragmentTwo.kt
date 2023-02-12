@@ -17,11 +17,11 @@ class FragmentTwo : Fragment(R.layout.two_fragment) {
         tvLastName = view.findViewById(R.id.tvLastName)
         tvGender = view.findViewById(R.id.tvGender)
 
-        mainActivity?.mainViewModel?.liveUserDetails?.observe(viewLifecycleOwner, {
+        mainActivity?.mainViewModel?.liveUserDetails?.observe(viewLifecycleOwner) {
             tvName.setText(it.name)
             tvLastName.setText(it.lastName)
             tvGender.setText(it.gender)
-        })
+        }
     }
 
     override fun onAttach(context: Context) {
